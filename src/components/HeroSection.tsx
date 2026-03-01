@@ -14,7 +14,7 @@ const HeroSection = () => {
           <div className="space-y-8 animate-fade-up">
             <div className="inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-1.5 text-sm font-medium text-secondary-foreground">
               <span className="h-2 w-2 rounded-full hero-gradient" />
-              Now available on Android & iOS
+              Now available — Download the APK
             </div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.08] tracking-tight text-foreground">
