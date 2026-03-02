@@ -1,22 +1,20 @@
-import { ShoppingCart } from "lucide-react";
-
 const Footer = () => {
   return (
-    <footer className="border-t border-border py-10">
+    <footer className="bg-navy py-12">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <a href="/" className="flex items-center gap-2">
-            <div className="flex h-7 w-7 items-center justify-center rounded-md hero-gradient">
-              <ShoppingCart className="h-3.5 w-3.5 text-primary-foreground" />
-            </div>
-            <span className="text-sm font-bold text-foreground">CartY</span>
-          </a>
-          <div className="flex gap-8 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-foreground transition-colors">Privacy</a>
-            <a href="#" className="hover:text-foreground transition-colors">Terms</a>
-            <a href="#" className="hover:text-foreground transition-colors">Contact</a>
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-8">
+          <div>
+            <span className="text-lg font-bold text-white tracking-tight" style={{ fontFamily: "'Sora', sans-serif" }}>CartY</span>
+            <p className="text-sm text-white/40 mt-1">Commerce for everyone.</p>
           </div>
-          <p className="text-xs text-muted-foreground">© 2025 CartY. All rights reserved.</p>
+          <div className="flex gap-8 text-sm text-white/50">
+            <a href="https://github.com/Gohskoh0/CartY" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub</a>
+            <a href="https://github.com/Gohskoh0/CartY/releases/latest/download/CartY.apk" download className="hover:text-white transition-colors">Download</a>
+            <a href="mailto:hello@carty.app" className="hover:text-white transition-colors">Contact</a>
+          </div>
+        </div>
+        <div className="border-t border-white/10 pt-6 text-center">
+          <p className="text-xs text-white/30">© 2025 CartY. Built with ❤️ for African vendors.</p>
         </div>
       </div>
     </footer>
