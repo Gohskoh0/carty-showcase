@@ -1,6 +1,8 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+const APK_URL = "https://github.com/Gohskoh0/CartY/releases/latest/download/CartY.apk";
+
 const CtaSection = () => {
   return (
     <section className="py-24 md:py-32">
@@ -16,8 +18,10 @@ const CtaSection = () => {
             <p className="text-lg text-primary-foreground/80">
               Join thousands of sellers who use CartY to turn their social media followers into paying customers.
             </p>
-            <Button size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold text-base px-8 h-13 gap-2 shadow-lg">
-              Download CartY <ArrowRight className="h-4 w-4" />
+            <Button asChild size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold text-base px-8 h-13 gap-2 shadow-lg">
+              <a href={APK_URL} download>
+                Download CartY <ArrowRight className="h-4 w-4" />
+              </a>
             </Button>
           </div>
         </div>
