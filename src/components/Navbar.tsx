@@ -1,6 +1,8 @@
 import { ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+const APK_URL = "https://github.com/Gohskoh0/CartY/releases/latest/download/CartY.apk";
+
 const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass">
@@ -16,8 +18,8 @@ const Navbar = () => {
           <a href="#how-it-works" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">How it Works</a>
           <a href="#testimonials" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Testimonials</a>
         </div>
-        <Button className="hero-gradient border-0 font-semibold shadow-lg">
-          Download App
+        <Button asChild className="hero-gradient border-0 font-semibold shadow-lg">
+          <a href={APK_URL} download>Download App</a>
         </Button>
       </div>
     </nav>
