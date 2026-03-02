@@ -1,20 +1,24 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import SocialProofBar from "@/components/SocialProofBar";
+import ProblemSolution from "@/components/ProblemSolution";
 import FeaturesSection from "@/components/FeaturesSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import CtaSection from "@/components/CtaSection";
+import InvestorSection from "@/components/InvestorSection";
+import DownloadCta from "@/components/DownloadCta";
 import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <Navbar />
       <HeroSection />
+      <SocialProofBar />
+      <ProblemSolution />
       <FeaturesSection />
       <HowItWorksSection />
-      <TestimonialsSection />
-      <CtaSection />
+      <InvestorSection />
+      <DownloadCta />
       <Footer />
     </div>
   );
