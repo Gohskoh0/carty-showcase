@@ -3,8 +3,12 @@ import HeroSection from "@/components/HeroSection";
 import SocialProofBar from "@/components/SocialProofBar";
 import ProblemSolution from "@/components/ProblemSolution";
 import FeaturesSection from "@/components/FeaturesSection";
+import ComparisonSection from "@/components/ComparisonSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
+import TractionSection from "@/components/TractionSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import InvestorSection from "@/components/InvestorSection";
+import FaqSection from "@/components/FaqSection";
 import DownloadCta from "@/components/DownloadCta";
 import Footer from "@/components/Footer";
 
@@ -12,13 +16,19 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <HeroSection />
-      <SocialProofBar />
-      <ProblemSolution />
-      <FeaturesSection />
-      <HowItWorksSection />
-      <InvestorSection />
-      <DownloadCta />
+      <main>
+        <HeroSection />
+        <SocialProofBar />
+        <ProblemSolution />
+        <FeaturesSection />
+        <ComparisonSection />
+        <HowItWorksSection />
+        <TractionSection />
+        <TestimonialsSection />
+        <InvestorSection />
+        <FaqSection />
+        <DownloadCta />
+      </main>
       <Footer />
     </div>
   );
