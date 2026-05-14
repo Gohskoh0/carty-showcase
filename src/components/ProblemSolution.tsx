@@ -8,7 +8,7 @@ const problems = [
 ];
 
 const solutions = [
-  "Free mobile app that IS your POS",
+  "A mobile app that IS your POS — no extra hardware",
   "Instant shareable storefront link (no website needed)",
   "Integrated Paystack payments, accept cards + mobile money",
 ];
