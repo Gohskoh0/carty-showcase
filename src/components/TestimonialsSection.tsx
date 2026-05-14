@@ -1,5 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { Star, Quote } from "lucide-react";
+import t1 from "@/assets/testimonial-1.jpg";
+import t2 from "@/assets/testimonial-2.jpg";
+import t3 from "@/assets/testimonial-3.jpg";
 
 const testimonials = [
   {
@@ -7,18 +10,21 @@ const testimonials = [
     role: "Fashion Vendor, Lagos",
     quote: "I used to lose track of orders in my DMs. With CartY, every sale is organized and I get paid instantly. My revenue went up 40% in two months.",
     rating: 5,
+    photo: t1,
   },
   {
     name: "Kwame Asante",
     role: "Electronics Seller, Accra",
     quote: "No more manual stock counting. CartY alerts me when items are running low. I just focus on selling now.",
     rating: 5,
+    photo: t2,
   },
   {
     name: "Fatima Musa",
     role: "Food Vendor, Abuja",
     quote: "I share my CartY store link on WhatsApp status every morning. Customers order directly — no more back-and-forth messages.",
     rating: 5,
+    photo: t3,
   },
 ];
 
@@ -65,8 +71,20 @@ const TestimonialsSection = () => {
                     <Star key={j} className="h-3.5 w-3.5 fill-primary text-primary" />
                   ))}
                 </div>
-                <p className="font-semibold text-card-foreground text-sm">{t.name}</p>
-                <p className="text-xs text-muted-foreground">{t.role}</p>
+                <div className="flex items-center gap-3 pt-4 border-t border-border/60">
+                  <img
+                    src={t.photo}
+                    alt={`Portrait of ${t.name}`}
+                    width={48}
+                    height={48}
+                    loading="lazy"
+                    className="h-11 w-11 rounded-full object-cover ring-2 ring-primary/10"
+                  />
+                  <div>
+                    <p className="font-semibold text-card-foreground text-sm">{t.name}</p>
+                    <p className="text-xs text-muted-foreground">{t.role}</p>
+                  </div>
+                </div>
               </article>
             ))}
           </div>
