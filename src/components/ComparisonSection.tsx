@@ -2,14 +2,14 @@ import { useEffect, useRef, useState } from "react";
 import { Check, X } from "lucide-react";
 
 const rows = [
-  { feature: "Free to use", carty: true, traditional: false, social: true },
   { feature: "Inventory management", carty: true, traditional: true, social: false },
   { feature: "Payment integration", carty: true, traditional: true, social: false },
-  { feature: "Works offline", carty: true, traditional: false, social: false },
   { feature: "No laptop required", carty: true, traditional: false, social: true },
   { feature: "Shareable storefront", carty: true, traditional: true, social: false },
   { feature: "Sales analytics", carty: true, traditional: true, social: false },
-  { feature: "Optimized for 2G/3G", carty: true, traditional: false, social: false },
+  { feature: "Optimized for low-end Android", carty: true, traditional: false, social: false },
+  { feature: "Order notifications", carty: true, traditional: false, social: false },
+  { feature: "Multi-currency support", carty: true, traditional: false, social: false },
 ];
 
 const ComparisonSection = () => {

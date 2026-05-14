@@ -6,7 +6,7 @@ const steps = [
     icon: Download,
     number: "01",
     title: "Download the app",
-    description: "Free from the button above, no Play Store needed. Install in under a minute.",
+    description: "Tap the button above to grab the APK. No Play Store needed — install in under a minute.",
   },
   {
     icon: Camera,

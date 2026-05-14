@@ -8,12 +8,12 @@ import { useEffect, useRef, useState } from "react";
 
 const faqs = [
   {
-    question: "Is CartY really free?",
-    answer: "Yes. CartY is completely free to download and use. There are no monthly subscriptions, no hidden fees, and no premium tiers. We only earn a small transaction fee when you accept payments through Paystack.",
+    question: "How much does CartY cost?",
+    answer: "CartY uses transparent, vendor-friendly pricing. You can start with a low monthly plan and scale as your business grows. We also charge a small transaction fee on payments processed through Paystack. Full pricing details are shared inside the app.",
   },
   {
     question: "Do I need internet to use CartY?",
-    answer: "CartY works offline for core functions like managing inventory and viewing orders. You'll need an internet connection only when processing payments or syncing your storefront.",
+    answer: "Yes. CartY needs an active internet connection to sync your inventory, process orders, and accept payments. The app is optimized to work smoothly even on slower 2G/3G networks.",
   },
   {
     question: "How do customers pay me?",
