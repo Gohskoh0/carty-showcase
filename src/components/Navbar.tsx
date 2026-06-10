@@ -1,4 +1,4 @@
-import { Download } from "lucide-react";
+import { Download, ShoppingCart } from "lucide-react";
 
 const APK_URL = "https://github.com/Gohskoh0/CartY/releases/latest/download/CartY.apk";
 
@@ -7,8 +7,8 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-navy/70 backdrop-blur-xl border-b border-white/5">
       <div className="container mx-auto flex items-center justify-between px-6 py-3.5">
         <a href="/" className="flex items-center gap-2" aria-label="CartY home">
-          <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-[hsl(250,70%,55%)] text-primary-foreground font-bold text-sm shadow-lg shadow-primary/30" style={{ fontFamily: "'Sora', sans-serif" }}>
-            C
+          <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-[hsl(250,70%,55%)] text-primary-foreground shadow-lg shadow-primary/30">
+            <ShoppingCart className="h-4 w-4" strokeWidth={2.5} />
           </span>
           <span className="text-lg font-bold text-white tracking-tight" style={{ fontFamily: "'Sora', sans-serif" }}>
             CartY
