@@ -1,4 +1,4 @@
-import { Download } from "lucide-react";
+import { Download, ShoppingCart } from "lucide-react";
 
 const APK_URL = "https://github.com/Gohskoh0/CartY/releases/latest/download/CartY.apk";
 
